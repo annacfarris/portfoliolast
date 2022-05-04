@@ -81,6 +81,38 @@
         <br><br><br>
     
     </main>
+    <footer>
+  <br><br><br><br>
+  <div class="formbody">
+    <h3 class="form-h3">Let's Connect!</h3>
+
+    <div class="formgroup">
+      <label for="Name" class="formlabel">Your name:</label>
+      <div class="forminput">
+        <input type="text" id="Name" name="Name" class="formcontrol" required>
+      </div>
+    </div>
+
+    <div class="formgroup">
+      <label for="Email" class="formlabel">Your email address:</label>
+      <div class="forminput">
+        <input type="email" id="Email" name="Email" class="formcontrol" required>
+      </div>
+    </div>
+
+    <div class="formgroup">
+      <label for="Message" class="formlabel">Your message:</label>
+      <div class="forminput">
+        <textarea id="Message" name="Message" class="formcontrol" rows="6" maxlength="3000" required></textarea>
+      </div>
+    </div>
+
+    <div class="formgroup">
+      <button type="submit" id="formbutton">Send Message</button>
+    </div>
+
+  </div>
+</footer>
 </template>
  
 <style> 
@@ -151,5 +183,86 @@
 .flexbox2 h1 {
   font-family: didot;
   
+}
+.formbody {
+  background-color: #c5b0a3;
+  margin: 0;
+  font-family: -apple-system, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #9d4b14;
+  text-align: left;
+  padding: 30px;  
+  padding-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem; 
+  max-width: 100%;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.formgroup {
+  margin-bottom: 1rem;
+}
+.forminput{
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+}
+.formcontrol{
+  display: block;
+    width: 60%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    outline: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.formcontrol:focus{
+  border: 1px solid #313131;
+}
+#formbutton {
+    display: inline-block;
+    font-weight: 400;
+    background-color: #9d4b14;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border: 1px solid #313131;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#formbutton:hover{
+  background-color: #a08e83;
+}
+.form-h3{
+  font-family: didot;
+  font-size: 20pt;
+}
+.formlabel {
+  font-family: didot;
+  font-size: 15pt;
+}
+#Message{
+  height:100px;
 }
 </style>

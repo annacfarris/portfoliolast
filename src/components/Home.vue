@@ -67,5 +67,37 @@ import { RouterLink, RouterView } from 'vue-router'
   </div> 
 
 </main>
+<footer>
+  <br><br><br><br>
+  <div class="formbody">
+    <h3 class="form-h3">Let's Connect!</h3>
+
+    <div class="formgroup">
+      <label for="Name" class="formlabel">Your name:</label>
+      <div class="forminput">
+        <input type="text" id="Name" name="Name" class="formcontrol" required>
+      </div>
+    </div>
+
+    <div class="formgroup">
+      <label for="Email" class="formlabel">Your email address:</label>
+      <div class="forminput">
+        <input type="email" id="Email" name="Email" class="formcontrol" required>
+      </div>
+    </div>
+
+    <div class="formgroup">
+      <label for="Message" class="formlabel">Your message:</label>
+      <div class="forminput">
+        <textarea id="Message" name="Message" class="formcontrol" rows="6" maxlength="3000" required></textarea>
+      </div>
+    </div>
+
+    <div class="formgroup">
+      <button type="submit" id="formbutton">Send Message</button>
+    </div>
+
+  </div>
+</footer>
 </template>
 
